@@ -52,9 +52,9 @@ namespace Ejercicio2
             decimal nota3 = Convert.ToDecimal(Nota3TextBox.Text);
             decimal nota4 = Convert.ToDecimal(Nota4TextBox.Text);
 
-
+            //Declaramos una variables donde llamamos la función asíncrona 
             decimal NotaFinal = await PromedioAsync(nota1, nota2, nota3, nota4);
-            PromedioLabel.Text = Convert.ToString(NotaFinal);
+            PromedioLabel.Text = Convert.ToString(NotaFinal); //Mostrar Resultado en un Label
 
         }
 
